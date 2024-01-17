@@ -2,9 +2,9 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="hi"
-                 name="Help Instance"
-                 start-page="패키지구조.md">
+<instance-profile id="pdg"
+                 name="Project Dev Guide"
+                 start-page="프로젝트-개발-가이드.md">
 
     <toc-element topic="프로젝트-개발-가이드.md"/>
     <toc-element topic="패키지구조.md"/>
