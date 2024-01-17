@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Help Instance"
+                 start-page="패키지구조.md">
+
+    <toc-element topic="프로젝트-개발-가이드.md"/>
+    <toc-element topic="패키지구조.md"/>
+    <toc-element topic="명명규칙.md"/>
+</instance-profile>
