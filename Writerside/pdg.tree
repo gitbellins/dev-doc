@@ -6,7 +6,15 @@
                  name="Project Dev Guide"
                  start-page="프로젝트-개발-가이드.md">
 
-    <toc-element topic="프로젝트-개발-가이드.md"/>
-    <toc-element topic="패키지구조.md"/>
-    <toc-element topic="명명규칙.md"/>
+    <toc-element topic="프로젝트-개발-가이드.md">
+        <toc-element topic="package-structure.md">
+            <toc-element topic="single-module.md"/>
+            <toc-element topic="multi-module.md"/>
+        </toc-element>
+        <toc-element topic="naming-rule.md"/>
+        <toc-element topic="coding-style.md"/>
+        <toc-element topic="coding-rule.md"/>
+        <toc-element topic="version.md"/>
+        <toc-element topic="build-deploy.md"/>
+    </toc-element>
 </instance-profile>

@@ -49,15 +49,16 @@ UserUpdateMapper
 UserDeleteMapper
 ```
 
+## DTO {id="dto"}
 
-## Request & Response DTO
+### Request & Response DTO
 사용자의 API 요청 Request 와 결과 Response.   
 기본적으로 Controller 로 들어오는 건 Request, Controller 가 반환하는 건 Response.   
 Controller 에서 가공이 없을 경우 Service 에서 Controller 로 반환하는 DTO 도 Response 라 칭할 수 있음   
 기본적으로 도메인 + (액션 | 구분자) + 접미어
 
 
-### 페이징
+#### 페이징
 접미어로 `PageRequest`, `PageResponse` 사용   
 페이징이 있는 리스트
 
@@ -68,7 +69,7 @@ public UserSearchPageResponse search(UserSearchPageRequest req) {
 }
 ```
 
-### 리스트
+#### 리스트
 접미어로 `ListRequest`, `ListResponse` 사용   
 페이징이 없는 리스트
 
@@ -79,7 +80,7 @@ public UserSearchListResponse search(UserSearchListRequest req) {
 }
 ```
 
-### 상세
+#### 상세
 접미어로 `ReadReqeust`, `ReadResponse` 사용
 
 ```Java
@@ -103,8 +104,9 @@ public UserReadResponse get(@ModelAttribute UserReadRequest req) {
     return new UserReadResponse(user);
 }
 ```
+{collapsible="true" include-lines="3"}
 
-### 등록
+#### 등록
 접미어로 `CreateRequest`, `CreateResponse` 사용
 
 ```Java
@@ -114,7 +116,7 @@ public UserCreateResponse create(UserCreateRequest req) {
 }
 ```
 
-### 수정
+#### 수정
 접미어로 `UpdateRequest`, `UpdateResponse` 사용
 
 ```Java
@@ -131,7 +133,7 @@ public UserUpdateResponse update(@PathVariable long id, UserUpdateRequest req) {
 }
 ```
 
-### 삭제
+#### 삭제
 접미어로 `DeleteRequest`, `DeleteResponse` 사용
 
 ```Java
@@ -156,7 +158,7 @@ public UserDeleteResponse delete(UserDeleteRequest req) {
 }
 ```
 
-### 등록 & 수정
+#### 등록 & 수정
 접미어로 `SaveRequest`, `SaveResponse` 사용
 
 ```Java
@@ -166,7 +168,7 @@ public UserSaveResponse update(UserSaveRequest req) {
 }
 ```
 
-## 일반 DTO
+### 일반 DTO {id="general-DTO"}
 Controller 이외에서 사용하는 DTO  
 메소드 호출 인자나 결과값으로 사용  
 기본적으로 도메인 + (액션 | 구분자) + 접미어(DTO)
@@ -179,7 +181,7 @@ UserReadResponse read(UserRequest req) {
 }
 ```
 
-## Entity
+## entity
 도메인명(테이블명) + 접미어(Entity)
 
 ```Java
